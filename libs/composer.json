@@ -1,0 +1,16 @@
+{
+    "name": "anzawi/find-diff",
+    "autoload": {
+        "psr-4": {
+            "Anzawi\\FindDiff\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Mohammad Anzawi",
+            "email": "m.anzawi2013@gmail.com"
+        }
+    ],
+    "require": {}
+}
