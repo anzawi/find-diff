@@ -51,9 +51,9 @@ if ($_GET && isset($_GET['first_string']) && isset($_GET['second_string'])) {
             </table>
         </div>
 
-        <span>Levenshtein: <?php echo $action->getLevenshtein() ?></span>
+        <span>Levenshtein Distance: <?php echo $action->getLevenshtein() ?></span>
         <br>
-        <span>Hamming: <?php echo $action->getHamming() ?></span>
+        <span>Hamming Distance: <?php echo $action->getHamming() ?></span>
     </div>
 <?php endif; ?>
 </body>
