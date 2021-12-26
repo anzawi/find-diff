@@ -1,0 +1,19 @@
+<?php
+$val = getopt(null, ["s1:", "s2:"]);
+
+if(!is_dir('./vendor')) {
+    echo "run 'composer install' first. \n\r";
+    exit;
+}
+
+if (!$val['s1'] || !$val['s2']) {
+    echo "you must inter 2 strings \n\r";
+    echo "Example: php runTest --s1=\"first string\" --s2=\"second string\" \n\r";
+    exit;
+}
+
+require_once 'vendor/autoload.php';
+
+echo "levenshtein distances is ( " . \Anzawi\FindDiff\Levenshtein::findDiff($val['s1'], $val['s2']) . " ) \n\r";
+echo "hamming distances is ( " . \Anzawi\FindDiff\Hamming::calculate($val['s1'], $val['s2']) . " ) \n\r";
+
