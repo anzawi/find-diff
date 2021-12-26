@@ -2,6 +2,13 @@
 calculate levenshtein distances &amp; hamming distances between 2 strings using PHP
 
 --------
+please note : PHP provided build-in functions to do what this library do
+it's just for fun !
+
+[levenshtein function](https://www.php.net/manual/en/function.levenshtein.php)
+
+[gmp_hamdist function](https://www.php.net/manual/en/function.gmp-hamdist.php)
+
 
 main Classes located in (`/libs/`) directory
 
@@ -28,3 +35,4 @@ check `composer.json` file and take a look on `repositories` section.
 
 don't forget to run test using `phpunit`
 `./vendor/bin/phpunit`
+
